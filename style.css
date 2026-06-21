@@ -1,0 +1,234 @@
+body {
+  background: linear-gradient(180deg, #007d5d, #26c89a, #7de8c0, #ffffff, #93b4e8, #4b5bbf, #2d1a7a);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+h1 {
+  background: linear-gradient(180deg, #d60270, #9b4f96, #0038a8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.8rem;
+  margin: 10px 0;
+}
+
+h2 {
+  background: linear-gradient(180deg, #d60270, #9b4f96, #0038a8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+}
+
+p {
+  background: linear-gradient(180deg, #d60270, #9b4f96, #0038a8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.6rem;
+  margin: 5px 0;
+}
+
+#sure-bar {
+  background: linear-gradient(90deg, #750787, #004dff, #008026, #ffed00, #ff8c00, #e40303);
+  height: 12px;
+  width: 100%;
+  border-radius: 10px;
+  transition: width 1s linear;
+  margin: 15px 0;
+}
+
+#skor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 2.2rem;
+  margin: 15px;
+}
+
+#skor1 {
+  background: linear-gradient(180deg, #c0392b, #e67e22, #e8a87c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+#orta-cizgi {
+  background: linear-gradient(180deg, #c0392b, #e67e22, #e8a87c, #ffffff, #c471c4, #9b6b9b, #8b1a6b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+#skor2 {
+  background: linear-gradient(180deg, #c471c4, #9b6b9b, #8b1a6b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+#butonlar button {
+  font-size: 2rem !important;
+  padding: 18px 32px !important;
+  border-radius: 15px;
+  cursor: pointer;
+  margin: 10px;
+  border: none;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+#butonlar button:hover {
+  transform: scale(1.06);
+  opacity: 0.9;
+}
+
+#butonlar button:nth-child(1) {
+  background: linear-gradient(180deg, #007d5d, #26c89a, #7de8c0, #ffffff, #93b4e8, #4b5bbf, #2d1a7a);
+}
+
+#butonlar button:nth-child(2) {
+  background: linear-gradient(180deg, #d60270, #d60270, #9b4f96, #0038a8, #0038a8);
+}
+
+#butonlar button:nth-child(3) {
+  background: linear-gradient(180deg, #c0392b, #e67e22, #e8a87c, #ffffff, #c471c4, #9b6b9b, #8b1a6b);
+}
+
+#btn-dil-degistir {
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: 2px solid white;
+  padding: 10px 22px;
+  font-size: 1.1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+#sonuc {
+  font-size: 2.5rem;
+  min-height: 2.5rem;
+  margin-top: 15px;
+}
+
+#dil-secim,
+#mod-secim,
+#isim-secim {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+#dil-liste {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  max-height: 55vh;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.dil-btn {
+  background: rgba(0, 0, 0, 0.4) !important;
+  color: white !important;
+  border: 2px solid white !important;
+  padding: 12px 22px !important;
+  font-size: 1.1rem !important;
+  border-radius: 25px !important;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.3s;
+}
+
+.dil-btn:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+
+.bayrak {
+  width: 32px;
+  height: 32px;
+  font-size: 1.4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#isim1,
+#isim2 {
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  border: 2px solid white;
+  background: rgba(0,0,0,0.4);
+  color: white;
+  text-align: center;
+  margin-bottom: 12px;
+  width: 220px;
+}
+
+#isim1:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background: rgba(255,255,255,0.1);
+}
+
+#btn-isim-onayla {
+  background: linear-gradient(180deg, #d60270, #9b4f96, #0038a8);
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  font-size: 1.3rem;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#konfeti-katman {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.parca {
+  position: absolute;
+  bottom: -80px;
+  animation-name: yukselme;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes yukselme {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-115vh) rotate(360deg);
+    opacity: 0;
+  }
+}
